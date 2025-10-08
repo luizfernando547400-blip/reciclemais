@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecoltarema - Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #1db954, #1aa34a);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: #f4fef5;
+            border-radius: 20px;
+            padding: 40px 30px;
+            max-width: 400px;
+            width: 100%;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            animation: fadeInUp 1s ease;
+            text-align: center;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .logo {
+            width: 70px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .icon-circle {
+            background: #1db954;
+            color: white;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            margin: 10px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+        }
+
+        h1 {
+            font-size: 20px;
+            margin-bottom: 5px;
+            color: #222;
+        }
+
+        p {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            text-align: left;
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 14px;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 12px;
+            padding-left: 40px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            font-size: 14px;
+            background: #fff url('https://img.icons8.com/ios-filled/50/user.png') no-repeat 10px center;
+            background-size: 20px;
+        }
+
+        .form-group input[type="password"] {
+            background-image: url('https://img.icons8.com/ios-filled/50/lock.png');
+        }
+
+        .remember {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 10px 0;
+            font-size: 13px;
+        }
+
+        .remember input {
+            margin-right: 5px;
+        }
+
+        .remember a {
+            color: #1db954;
+            text-decoration: none;
+        }
+
+        button {
+            width: 100%;
+            background: #1db954;
+            color: white;
+            border: none;
+            padding: 12px;
+            font-size: 16px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background 0.3s;
+            margin-bottom: .5rem;
+        }
+
+        button:hover {
+            background: #17a44d;
+        }
+
+        .impacto {
+            margin-top: 20px;
+            background: #e7f8eb;
+            border-radius: 10px;
+            padding: 15px;
+            font-size: 13px;
+            color: #222;
+        }
+
+        .impacto strong {
+            display: block;
+            font-size: 16px;
+            margin-top: 5px;
+            color: #1db954;
+        }
+
+        .cadastro {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        .cadastro a {
+            color: #1db954;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        .cadastro a:hover {
+            color: #148c3c;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="../assets/itarema.jpg" alt="Logo Ecoltarema" class="logo" />
+        <div class="icon-circle">🔄</div>
+        <h1>Ecoltarema</h1>
+        <p><strong style="color: #1db954;">Reciclagem Sustentável!</strong><br>
+            Faça login para continuar ajudando o meio ambiente</p>
+
+        <div class="form-group">
+            <label>Email ou CPF</label>
+            <input type="text" placeholder="seu@email.com" />
+        </div>
+
+        <div class="form-group">
+            <label>Senha</label>
+            <input type="password" placeholder="********" />
+        </div>
+
+        <div class="remember">
+            <label><input type="checkbox" /> Lembrar de mim</label>
+            <a href="#">Esqueceu a senha?</a>
+        </div>
+
+        <button>Coletor</button>
+        <button>Doador</button>
+        <button>Entrar no App</button>
+
+
+        <div class="cadastro">
+            Não tem Ecoltarema? <a href="login.html">Cadastre-se gratuitamente</a>
+
+        </div>
+        
+    </div>
+</body>
+
+</html>
